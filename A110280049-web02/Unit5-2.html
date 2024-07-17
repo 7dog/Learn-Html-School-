@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動態網頁設計單元(5)</title>
+    <style>
+        div{background-color: lightyellow; margin-top: 10%; width: 50%; margin:auto; padding-left: 15px;}
+    </style>
+</head>
+<body>
+    <div>
+        <h3 align="center">JavaScript 第二次上課 Unit2</h3>
+        <script>
+            //變數宣告
+            var stuName ="XXX";
+            var stuNumber,courseNum,tuitionAmount,stuTel;
+            //指定變數直
+            stuNumber ="103456002";
+            courseNum = 7;
+            tuitionAmount = 1200*courseNum;
+            stuTel = 912444678;
+            creditNum = 5*2 + 2*3; //此變數之前沒宣告
+            stuTel = "91244678"; //變數型態變成 字串
+            tuitionAmount = 1200*creditNum; // 此變數的值 被改變了
+
+    //在螢幕上 做顯示
+    document.write("學生名稱:"+stuName+"<br>");
+    doucment.write("學生學號:"+stuNumber+"<br>");
+    document.write("修課數目:"+courseNum+"<br>");
+    document.write("總學分數:"+creditName+"<br>");
+    document.write("需繳學費:NT$"+tuitionAmount+"<br>");
+    document.write("連絡電話:"+stuTel+"<br><br>");
+
+    //檢查變數是否存在
+    teacherName ="OOO";
+    if(teacherName) //teacherName 等同於 window.teacherName
+          document.write("teacherName 存在, 名子是"+ teacherName+"<br>");
+          else
+          document.write("teacherName 不存在, 請先建立 teacherName"+"<br>");
+          if(window.courseName)
+          document.write("courseName 存在,名字是"+window.courseName+"<br>");
+          else
+          document.write("courseName 不存在, 請先建立 courseName" +"<br>");
+
+          y = Math.round(3.14);
+          document.write("<br>3.14 四捨五入 等於"+y+"<br><br>");
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A110280049 HK(2)</title>
+    <!--Bootstrap 5 CSS-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--my CSS-->
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+    <link rel="stylesheet" type="text/css" href="css/hk2_css.css">
+    <!--my JavaScript code-->
+    <script type="text/javascript" src="js/dropmenu.js"></script>
+</head>
+<body>
+    <header class="col text-center font-weight-bold">廖裕豐 HK02</header>
+    <nav class="navbar bg-success justify-content-start">
+        <a href="index.html"><button type="button" class="btn btn-success">HOME</button></a>
+        <a href="photo.html"><button type="button" class="btn btn-success">照片輪播</button></a>
+        <a href="music.html"><button type="button" class="btn btn-success">聽音樂</button></a>
+        <a href="video.html"><button type="button" class="btn btn-success">看影片</button></a>
+
+        <!--選單 1 (Hover)-->
+        <span class="drop-menu btn btn-success" onmouseover="switchMenu(this,'SubMenu1','MouseOver')" onmouseout="hideMenu()">景點介紹<span style="font-size: 9px;">&#9660;</span>
+            <ul id="SubMenu1" class="dropDown-menu" style="display:none;">
+                <li><a href="scenery1.html">日月潭</a></li>
+                <li><a href="scenery2.html">阿里山</a></li>
+                <li><a href="scenery3.html">圓山飯店</a></li>
+                <li><a href="scenery4.html">實踐大學</a></li>
+                <li><a href="scenery5.html">墾丁大街</a></li>
+            </ul>
+        </span>
+
+        <!--選單 2 (Click)-->
+        <span class="drop-menu btn btn-success" onclick="switchMenu(this,'SubMenu2')">生活應用<span style="font-size: 9px;">&#9660;</span>
+            <ul id="SubMenu2" class="dropDown-menu" style="display:none;">
+                <li><a href="#">九九乘法表</a></li>
+                <li><a href="#">猜數字</a></li>
+                <li><a href="#">威力彩</a></li>
+                <li><a href="#">大樂透</a></li>
+                <li><a href="#">溫度轉換</a></li>
+                <li><a href="#">BMI計算</a></li>
+                <li><a href="#">體指率計算</a></li>
+                <li><a href="#">配對遊戲</a></li>
+            </ul>
+    </nav>
+    
+    <main class="container-fluid bg-warning">
+        <div class="row">
+            <div class="w-100 text-center" style="height:60px; padding: 20px; font-size: 20px">
+                阿里山的景點介紹
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div id="myMap2" style="height:400px; width:100%"></div>
+            </div>
+            <div class="col-12 col-md-4" style="height:400px; overflow:auto; text-align:justify">
+                <article>
+                    <p>
+                        <h4><strong>氣溫變化大，山勢起伏多</strong></h4>
+                        阿里山地區四面高山環繞，氣候涼爽，濕度大、雨量充沛（四月到九月為雨季，十月到翌年三月為旱季），也時常有濃霧，出遊需要特別留意。
+                        海拔高度起伏變化大，東部山區屬阿里山山脈，由大塔山、石水山、兜山、萬歲山、塔山、祝山、尖山等十八座主要山巒構成，溪流橫貫其間。清水溪上游段因地形起伏，流經岩壁巨石，瀑布景觀特別發達，
+                        在瑞峰、瑞里、豐山境內清水溪支流流經處就形成了龍宮、雷音、雲潭、石鼓盤瀑布等景觀。<br><br>
+                        <h4><strong>五奇最經典，來過不錯過</strong></h4>
+                        日出、雲海、鐵路、森林、晚霞，提到阿里山，腦海裡浮現的總是脫離不了五奇，當清晨曙光乍現，朝陽輕巧地躍出山頭，為新的一天揭開了序幕，而當傍晚，橙紅西夕又是另一番感動。
+                        阿里山雲海名列台灣八景之一，通常出現在天氣晴朗、浮雲遍布的日出或薄暮之時，秋天是觀賞雲海的最佳季節。世界僅存的三條登山鐵路之一就在阿里山，昔日為轉運木材而建，如今蛻變成旅遊列車，
+                        載著遊客穿梭在森林間；不想搭火車也能踏上步道親近自然、吸取豐富芬多精，體會高山森林的迷人之處。
+                    </p>
+                    <p>
+                        <h4><strong>訪原民文化，深度遊在地</strong></h4>
+                        鄒族在食衣住行育樂均有獨特的脈絡，每年二月舉辦的「Mayasvi（戰祭）」、十月舉行「生命豆季」，保有完整的傳統祭儀，深具文化特色。
+                        以茅草為頂的建築，是鄒族獨到的部落景觀，其中又以男子聚會所庫巴「kuba」最具代表性，會所是男子活動中心以及舉辦部落儀式的重要場所，也象徵鄒族文化的宇宙觀與社會觀。
+                        而根源於生活所發展出的皮雕、藤編、木雕工藝，十足展現鄒族文化的智慧與美感。<br><br>
+                        <h4><strong>親近綠生態，盡享森呼吸</strong></h4>
+                        沿山麓而上，森林植被隨著海拔高度爬升改變，亞熱帶闊葉林（榕楠林帶）、溫暖闊葉林（楠櫧林帶）、涼溫帶針闊葉混合林（櫟木帶或霧林帶）、冷溫帶山地針葉林（鐵杉林帶）、竹林、山黃麻、樟樹、
+                        青剛櫟、紅檜、肖楠、香杉、台灣杉、台灣扁柏、雲杉、鐵杉，不時可以聞到森林樹種所釋放出的獨特香氣，走進樹林感受神清氣爽。
+                        冬末夾道迎客的山櫻花登場，揭開了花季的序幕；三月初開始綻放，花期長達一個月的吉野櫻，是阿里山花季的主角；直至暮春，換由桃花出場。這段時間裡，山谷遍野萬紫千紅，
+                        宛如世外桃源，一場令人目不暇給的錦簇盛宴，往往贏得駐足讚嘆。
+                    </p>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="row bg-primary py-5">
+        <div class="row mx-0 justify-content-center align-item-center w-100">
+            <div class="text-center text-light bg-dark w-50">
+                <div>
+                    <strong>聯絡資訊</strong>
+                </div>
+                <div>
+                    <strong>電話:(02)25381111</strong><br>
+                    <strong>地址:台北市大直街70號(L棟4樓)</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script async
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAmiLWrjzyZmhyEwPd9dtKZyFDuTvxaUhk&callback=initMap">
+    </script>
+    <script type="text/javascript" src="js/Map2.js"></script>
+</body>
+</html>

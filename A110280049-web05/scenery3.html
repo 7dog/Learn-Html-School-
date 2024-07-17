@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A110280049 HK(2)</title>
+    <!--Bootstrap 5 CSS-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--my CSS-->
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+    <link rel="stylesheet" type="text/css" href="css/hk2_css.css">
+    <!--my JavaScript code-->
+    <script type="text/javascript" src="js/dropmenu.js"></script>
+</head>
+<body onload="init()">
+    <header class="col text-center font-weight-bold">廖裕豐 HK02</header>
+    <nav class="navbar bg-success justify-content-start">
+        <a href="index.html"><button type="button" class="btn btn-success">HOME</button></a>
+        <a href="photo.html"><button type="button" class="btn btn-success">照片輪播</button></a>
+        <a href="music.html"><button type="button" class="btn btn-success">聽音樂</button></a>
+        <a href="video.html"><button type="button" class="btn btn-success">看影片</button></a>
+
+        <!--選單 1 (Hover)-->
+        <span class="drop-menu btn btn-success" onmouseover="switchMenu(this,'SubMenu1','MouseOver')" onmouseout="hideMenu()">景點介紹<span style="font-size: 9px;">&#9660;</span>
+            <ul id="SubMenu1" class="dropDown-menu" style="display:none;">
+                <li><a href="scenery1.html">日月潭</a></li>
+                <li><a href="scenery2.html">阿里山</a></li>
+                <li><a href="scenery3.html">圓山飯店</a></li>
+                <li><a href="scenery4.html">實踐大學</a></li>
+                <li><a href="scenery5.html">墾丁大街</a></li>
+            </ul>
+        </span>
+
+        <!--選單 2 (Click)-->
+        <span class="drop-menu btn btn-success" onclick="switchMenu(this,'SubMenu2')">生活應用<span style="font-size: 9px;">&#9660;</span>
+            <ul id="SubMenu2" class="dropDown-menu" style="display:none;">
+                <li><a href="#">九九乘法表</a></li>
+                <li><a href="#">猜數字</a></li>
+                <li><a href="#">威力彩</a></li>
+                <li><a href="#">大樂透</a></li>
+                <li><a href="#">溫度轉換</a></li>
+                <li><a href="#">BMI計算</a></li>
+                <li><a href="#">體指率計算</a></li>
+                <li><a href="#">配對遊戲</a></li>
+            </ul>
+    </nav>
+    
+    <main class="container-fluid bg-warning">
+        <div class="row">
+            <div class="w-100 text-center" style="height:60px; padding: 20px; font-size: 20px">
+                圓山飯店的景點介紹
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div id="myMap3" style="height:400px; width:100%"></div>
+            </div>
+            <div class="col-12 col-md-4" style="height:400px; overflow:auto; text-align:justify">
+                <article>
+                    <p>
+                        <h4><strong>圓山大飯店 THE GRAND HOTEL</strong></h4>
+                        圓山大飯店成立於1952年，由蔣夫人宋美齡女士所創，是全台第一家五星級飯店，其巍峨圓山之腰，前臨基隆河、後倚陽明山、東望松山、西眺淡水。
+                        十四層宮殿式大樓，紅柱金瓦、氣勢輝宏，襯托富麗堂皇的古典氣氛，傳達東方藝術之美，是台北市的代表地標之一。
+                        飯店擁有500間客房、4間中外精緻料理餐廳及大型宴會廳，提供百匯佳餚的極致享受，位處城市制高點的圓山，白天鳥瞰繁華，夜晚可一親寧靜，在時間穿越空間，古典交錯現代的環境裡，
+                        提供給貴賓絕妙享受。
+                    </p>
+                    <p>
+                        <h4><strong>全球飯店界首屈一指的標竿--「喧囂城市中的寧靜綠洲」</strong></h4>
+                        <center><strong>1967年，美國財星雜誌評選為世界10大飯店</strong></center>
+                        <center><strong>1968年，入選美國假期雜誌「第一流旅館」</strong></center>
+                        圓山至今已接待各國元首、使節、政要、名人超過2,000位以上。如美國總統艾森豪、泰國國王蒲美蓬、韓國總統朴正熙、日本首相佐藤榮作、新加坡總理李光耀等都曾是圓山的貴賓。
+                        五星級的圓山大飯店在2016年獲得「穆斯林友好餐旅」認證。接著在2017年獲得中國回教協會「穆斯林友善餐旅」認證，且積極開拓穆斯林市場。圓山跟穆斯林的友好，始肇1958年。
+                        第一位入住的友邦元首就是來自伊朗的國王巴勒維，之後約旦國王胡笙、沙烏地阿拉伯前國王費瑟訪台，也都下榻圓山。走過一甲子，圓山見證了歷史與台灣的民主進程，包括1979年中美斷交的斡旋談判、
+                        1986年民主進步黨、1990年奠定憲政改革國是會議的召開、2000年親民黨的成立，都可見圓山大飯店紅柱金瓦的身影。圓山近年致力活化寶貴的文化資產，
+                        相繼揭開東西兩條密道的神祕面紗獲得熱烈迴響，將圓山重要的文化資產完整呈現在世人的面前。
+                        除此之外圓山打造文化新地標，塑造度假莊園風，讓客人來到圓山，感受到的是一種溫暖「心」體驗，圓山期許為台灣的旅遊標竿，我們以溫暖的人情、豐富的歷史，
+                        擁抱世界各地到訪的朋友，提供五星級的優質設施與服務，誠摯邀請您來感受這獨一無二的圓山風情。
+                    </p>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="row bg-primary py-5">
+        <div class="row mx-0 justify-content-center align-item-center w-100">
+            <div class="text-center text-light bg-dark w-50">
+                <div>
+                    <strong>聯絡資訊</strong>
+                </div>
+                <div>
+                    <strong>電話:(02)25381111</strong><br>
+                    <strong>地址:台北市大直街70號(L棟4樓)</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script async
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAmiLWrjzyZmhyEwPd9dtKZyFDuTvxaUhk&callback=initMap">
+    </script>
+    <script type="text/javascript" src="js/Map3.js"></script>
+</body>
+</html>

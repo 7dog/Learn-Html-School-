@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 60px; height:20px; border-radius: 5px;
+        }
+        select {
+            width:240px; height:30px; font-size:16px; color:blueviolet; border-radius:5px;
+        }
+    </style>
+</head>
+<body bgcolor="lightyellow" align="center">
+    
+    <!-- JavaScript 前端處理 練習 -->
+    <h2>JavaScript 第七次上課:JavaScript 與 用戶端 的互動</h2>
+    <h2>JavaScript oninput event</h2>
+    <h3>攝氏溫度 轉換成 華氏溫度</h3>
+    <label>請輸入攝氏溫度</label>
+    <input type="number" oninput="converter(this.value)">
+    <p>等於 華氏 : <span id="output"></span></p>
+
+    <script>
+        function converter(degree){
+            document.getElementById("output").innerHTML = ((9/5)*degree) + 32;
+        }
+    </script>
+
+    <h2>JavaScript onchange event</h2>
+    <h3>早餐 飲料 的 選擇</h3>
+    <select id="drink" onchange="selected()">
+        <option value="Coffee">咖啡</option>
+        <option value="Juice">果汁</option>
+        <option value="Black Tea">紅茶</option>
+        <option value="Green Tea">綠茶</option>
+        <option value="Water">水</option>
+    </select>
+    <h3 id="show"></h3>
+    <script>
+        function selected(){
+            var x = document.getElementById("drink").value;
+            document.getElementById("show").innerHTML = "你選擇的是 : " + x;
+        }
+    </script>
+</body>
+</html>

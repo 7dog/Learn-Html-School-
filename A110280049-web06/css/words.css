@@ -1,0 +1,25 @@
+.pp{
+    text-align: center;
+}
+.pf{
+    font-family: "Verdana", Sans-serif;
+}
+.pf1 {
+    font-size: 12.5px;
+}
+
+  /*Tabble*/
+  td a:link{
+    color: white;
+    text-decoration: none;
+  }
+  td a:visited{
+    color: white;
+  }
+  td a:active{
+    color: white;
+  }
+  td a:hover{
+    color: white;
+    text-decoration: underline;
+  }

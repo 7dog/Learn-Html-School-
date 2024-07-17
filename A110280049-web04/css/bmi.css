@@ -1,0 +1,36 @@
+h1 {font-weight:bold; color:blueviolet; text-decoration:underline; font-size:40px;}
+input {
+    height:26px;
+    font-size:20px;
+    border-radius:5px; border:1px solid limegreen;
+}
+input[type = 'number']{
+    width:80xp;
+}
+.radio {
+    display:inline-flex;
+    align-items:center;
+    cursor: pointer;
+    margin-right: 10px; line-height:36px;
+}
+.radio_input {
+    display: none;
+}
+.myRadio {
+    width: 1.25em; height: 1.25em;
+    border:2px solid blueviolet; border-radius: 50%;
+    margin: 10px 5px; padding: 2px;
+    box-sizing: border-box; 
+}
+.myRadio::after {
+    content:"";
+    width: 100%; height: 100%;
+    display:block; background-color:blueviolet;
+    border-radius: 50%;
+    transform: scale(0);
+}
+.radio_input:checked + .myRadio::after {
+    transform: scale(1);
+}
+.font01 {font-size:x-large; font-weight:bold; color:mediumvioletred;}
+.font02 {font-size:large; font-weight:bold;}

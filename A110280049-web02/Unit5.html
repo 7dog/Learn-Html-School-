@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動態網頁設計 單元(5)</title>
+</head>
+<body align="center" bgcolor="yellow">
+    <h3>JavaScript 第二次上課 Unit1</h3>
+
+    <p>Click the button get the text content of the button element.</p>
+    <button onclick="myFunction()" id="myBtn">Try it Try it</button>
+    <p><strong>Note:</strong>The textContent property is not supported in Internet Explorer 8 and earlier.</p>
+    <p id="demo" style="color: blue">Not Try, Not Try</p>
+    <p>Today:<strong id="choice"></strong></p>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myBtn").textContent;
+            document.getElementById("demo").innerHTML = x;
+            document.getElementById("choice").textContent = new Date();
+        }
+    </script>
+
+    <div id="msg">
+        <p>HTML5從零開始</p>
+    </div>
+
+    <script>
+        y = document.getElementById('msg').innerHTML;
+        document.writeln("<font size='5' color='red'>"+y+"</font>");
+        z = document.getElementById('msg').innerHTML;
+        document.writeln("<font size='5' color='green'>"+z+"</font>");
+        tt = "hello";
+        document.write("<br><br>"+tt+"<br>");
+        var tt ="ha ha hello";
+        document.writeln(tt+"<br>");
+        const MIN_NUM = 1;
+        document.write(MIN_NUM+2+"<br>");
+        MAX_NUM = 9;
+        document.write(MAX_NUM - MIN_NUM);
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A110280049 HK(2)</title>
+    <!--Bootstrap 5 CSS-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+    <link rel="stylesheet" type="text/css" href="css/hk2_css.css">
+    <!--my JavaScript code-->
+    <script type="text/javascript" src="js/dropmenu.js"></script>
+</head>
+<body>
+    <header class="col text-center font-weight-bold">廖裕豐 HK02</header>
+    <nav class="navbar bg-success justify-content-center sticky-top">
+        <a href="index.html"><button type="button" class="btn btn-success">HOME</button></a>
+        <a href="photo.html"><button type="button" class="btn btn-success">照片輪播</button></a>
+        <a href="music.html"><button type="button" class="btn btn-success">聽音樂</button></a>
+        <a href="video.html"><button type="button" class="btn btn-success">看影片</button></a>
+
+        <span class="drop-menu btn btn-success" onmouseover="switchMenu(this,'SubMenu1','MouseOver')" onmouseout="hideMenu()">景點介紹<span style="font-size: 9px;">&#9660;</span>
+            <ul id="SubMenu1" class="dropDown-menu" style="display:none;">
+                <li><a href="scenery1.html">日月潭</a></li>
+                <li><a href="scenery2.html">阿里山</a></li>
+                <li><a href="scenery3.html">圓山飯店</a></li>
+                <li><a href="scenery4.html">實踐大學</a></li>
+                <li><a href="scenery5.html">墾丁大街</a></li>
+            </ul>
+        </span>
+
+        <!--選單 2 (Click)-->
+        <span class="drop-menu btn btn-success" onclick="switchMenu(this,'SubMenu2')">生活應用<span style="font-size: 9px;">&#9660;</span>
+            <ul id="SubMenu2" class="dropDown-menu" style="display:none;">
+                <li><a href="#">九九乘法表</a></li>
+                <li><a href="#">猜數字</a></li>
+                <li><a href="#">威力彩</a></li>
+                <li><a href="#">大樂透</a></li>
+                <li><a href="#">溫度轉換</a></li>
+                <li><a href="#">BMI計算</a></li>
+                <li><a href="#">體指率計算</a></li>
+                <li><a href="#">配對遊戲</a></li>
+            </ul>
+    
+    </nav>
+    <main class="container-fluid bg-warning" style="font-family: 標楷體">
+        <div class="row">
+            <div class="col">
+                <center><marquee id="info">LET Listen!!!!!!!!</marquee></center>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="padding-top:5% ">
+            <div class="mx-auto">
+                <h3 class="text-center mt-4">音樂賞析</h3>
+                <audio id="music_play1" src="musics/Music1.mp3"></audio>
+                <audio id="music_play2" src="musics/Music2.mp3"></audio>
+                <audio id="music_play3" src="musics/Music3.mp3"></audio>
+                <audio id="music_play4" src="musics/Music4.mp3"></audio>
+                <audio id="music_play5" src="musics/Music5.mp3"></audio>
+                <audio id="music_play6" src="musics/Music6.mp3"></audio>
+
+                <center style="padding-top:10%; font-family: 標楷體;">
+                    <button class="btn btn-success" type="button" onclick="start();">PLAY&#9654</button>
+                    <button class="btn btn-info" type="button" onclick="pause();">PAUSE&#9208</button>
+                    <button class="btn btn-success" type="button" onclick="next();">NEXT SONG</button>
+                    <button class="btn btn-success" type="button" onclick="previous();">PREVIOUS SONG</button>
+                    <button class="btn btn-info" type="button" onclick="upVolume();">LOUDER&#8593</button>
+                    <button class="btn btn-info" type="button" onclick="downVolume();">LOWER&#8595</button>
+                    <p><font size="5">The length of this music:</font><span id="dur_time"></span><br>
+                        <span><font size="5">&nbsp;&nbsp;&nbsp;Played time:</font></span><span id="cur_time"></span>
+                    </p> 
+                </center>
+            </div>
+        </div>
+    </main>
+    <footer class="row bg-primary py-5">
+        <div class="row mx-0 justify-content-center align-item-center w-100">
+            <div class="text-center text-light bg-dark w-50">
+                <div>
+                    <strong>聯絡資訊</strong>
+                </div>
+                <div>
+                    <strong>電話:(02)25381111</strong><br>
+                    <strong>地址:台北市大直街70號(L棟4樓)</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/musicplay.js"></script>
+</body>
+</html>

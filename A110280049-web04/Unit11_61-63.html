@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動態網頁設計 單元(十一)</title>
+    <style>
+        .myButton{
+            display:inline-block;
+            border-radius: 8px; border: 1px solid #337bc4;
+            background-color: #79bbff; color:#ffffff;
+            box-shadow:3px 4px 0px 0px #1564ad;
+            cursor: pointer;
+            font-family: Arial; font-size: 25px; font-weight:bold;
+            padding:12px 44px; text-decoration:none;
+            text-shadow:0px 1px 0px #528ecc; margin:5px;
+        }
+        .myButton:hover{
+            background:linear-gradient(to bottom,#378de5 5%,#79bbff 100%);
+            background-color:#378de5;
+        }
+    </style>
+</head>
+<body bgcolor="lightyellow" align="center">
+    <h2>JavaScript 第八次上課:JavaScript 與 用戶端 的互動 </h2>
+    <h2><font color="red">時鐘:計時練習</font></h2>
+    <hr>
+    <div id="show"></div>
+    <button type="button" class="myButton" onclick="startClock();">開始計時</button>
+    <button type="button" class="myButton" onclick="stopClock();">停止計時</button>
+    <br><br>
+
+    <script>
+        var dttoday = new Date();
+        document.write("今日日期與時間:" +dttoday +"<br>");
+
+        outout = dttoday.getDate() +"/";
+        output += (dttoday,getMonth()+1) +"/";
+        output += (dttoday.getFullYear())+"<br>";
+        document.write("System Date:" +output);
+
+        output = dttoday.getHours() +":";
+        output +=(dttoday.getMinutes())+":";
+        output +=(dttoday.getSeconds())+"<br>";
+        document.write("System Time:" +output);
+
+        //網頁時鐘
+        var timer = null;
+        function startClock(){
+            var time = new Date();
+            var hours = time.getHours()+":";
+            var minutes = time.getMinutes()+":";
+            var seconds = time.getSeconds()
+            show.innerHTML = "<font size='20'>"+hours+minutes+seconds+"<font>";
+            timer = setTimeout("startClock()", 1000);
+        }
+        function stopClock(){
+            clearTimeout(timer);
+        }
+    </script>
+</body>
+</html>

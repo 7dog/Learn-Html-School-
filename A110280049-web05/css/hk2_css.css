@@ -1,0 +1,57 @@
+header { height: 80px; 
+    color: #ffffff; 
+    background-color: linear-gradient(to left,rgba(113, 120, 221) 20%, rgb(240,57,57));
+    line-height: 80px; font-size:larger;
+}
+main{ min-height: 66vh;
+}
+p {
+    font-family: 'cwTeXYen';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+}
+
+/* 下拉選單的樣式*/
+.drop-menu {
+    color :#ffffff;padding: 5px; margin: 0px; cursor: pointer; display: inline-block; width: 115px; text-align: center;
+}
+.drop-menu:hover {background-color: #2a9d8f;}
+.drop-menu a {color:#ffffff; text-decoration: none;}
+
+.dropDown-menu {margin:5px -6px; padding:0px; list-style-type:none; position:absolute; width:117px; z-index:99;}
+.dropDown-menu li {padding:0px 0px; text-align:left;}
+
+.dropDown-menu a {color:black; text-decoration:none; text-align:left; display:block;}
+.dropDown-menu a:hover {background-color:#264653;}
+
+/* 電影清單的樣式*/
+/*.caption-container {
+    text-align: center; font-size: 24px; padding: 2px;
+    color:white; background-color:#9c17df;
+}
+ul{
+    list-style-type: none; margin-top: 30px; padding: 0;
+    width:200px; background-color: #f1f1f1; border:1px solid #555;
+}
+li {
+    text-align: center; border-bottom: 1px solid #555;
+}
+li:last-child {
+    border-bottom: none;
+}
+li a {
+    display: block; color: #000;
+    padding: 8px 16px; text-decoration: none; 
+}
+li a.active {
+    background-color:#4CAF50; color:white;
+}
+li a:hover{
+    background-color: #4CAF50; color:white;
+}
+*/
